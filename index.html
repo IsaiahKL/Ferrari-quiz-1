@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Quiz Assignment</title>
+	<script src="quizproject.js"></script>
+	<link rel="stylesheet" type="text/css" href="quizproject.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='icons/quizlogo.png' type='image/x-icon'/ >
+    <link rel="manifest" href="manifest.json">
+  
+</head>
+<body onLoad="loadQuestion()">
+
+<section id="lightbox" onclick="closeLightBox()">
+   <div id="message">This is the message</div>
+</section>
+
+<h1>Ferrari Quiz</h1> 
+
+<main class="grid-container">
+  <header class="header">
+    <div id="question">The Question</div>
+  </header>
+  
+  <button class="Hintb" id="h" onclick="markHint('h')">Hint</button>
+  <aside class="left">
+    <div id="div">
+	  <br>
+	  <br>
+      <button class="options" id="a" onclick="markIt('a')">A.</button>
+	  <br>
+	  <br>
+      <button class="options" id="b" onclick="markIt('b')">B.</button>
+	  <br>
+	  <br>
+      <button class="options" id="c" onclick="markIt('c')">C.</button>
+	  <br>
+	  <br>
+      <button class="options" id="d" onclick="markIt('d')">D.</button>
+	  <br>
+	  <br>
+    </div>
+  </aside> 
+
+  
+  <figure class="right"> <img id="image" src="" alt=""></figure>
+  
+  <footer class="footer1">
+    <p>Instructions or additional features go here.</p>
+  </footer>
+  
+  <footer class="footer2">
+    <p>Score  <span id="score"></span></p>
+  </footer>
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
